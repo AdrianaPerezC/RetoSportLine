@@ -22,7 +22,8 @@ public class Excel {
         XSSFSheet newSheet = newWorkbook.getSheet(hojaDeExcel);
         Iterator<Row> rowIterator = newSheet.iterator();
         Row titulos = rowIterator.next();
-        while (rowIterator.hasNext()) {
+        while (rowIterator.hasNext())
+        {
             Row row = rowIterator.next();
             Iterator<Cell> cellIterator = row.cellIterator();
             while (cellIterator.hasNext()) {

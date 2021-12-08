@@ -14,16 +14,17 @@ public class SportLinePage {
     public By getBtnElementoBusqueda() {
         return btnElementoBusqueda;
     }
-
     public By getTxtElementoBusqueda() {
         return txtElementoBusqueda;
     }
 
     public void setBtnElementoBusqueda(String producto) {
-        this.btnElementoBusqueda =By.xpath("//strong[@class='product name product-item-name']//a[contains(text(),'"+producto+"')]");
+        this.btnElementoBusqueda =By.xpath("//strong[@class='product name product-item-name']//a[contains(text(),'"
+                +producto+"')]");
     }
 
     public void setTxtElementoBusqueda(String producto) {
-        this.txtElementoBusqueda=By.xpath("//div[@class='product-info-main']/div[@class='page-title-wrapper']/h1[@class='page-title']//span[contains(text(),'"+producto+"')]");
+        this.txtElementoBusqueda=By.xpath("//div[@class='product-info-main']/div[@class='page-title-wrapper']" +
+                "/h1[@class='page-title']//span[contains(text(),'"+producto+"')]");
     }
 }
