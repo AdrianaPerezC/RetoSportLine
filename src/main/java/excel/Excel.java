@@ -1,8 +1,9 @@
+package excel;
+
 import org.apache.poi.ss.usermodel.Cell;
 import org.apache.poi.ss.usermodel.Row;
 import org.apache.poi.xssf.usermodel.XSSFSheet;
 import org.apache.poi.xssf.usermodel.XSSFWorkbook;
-
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.IOException;
@@ -44,10 +45,5 @@ public class Excel {
             informacionProyecto = new HashMap<String, String>();
         }
         return arrayListDatoPlanTrabajo;
-    }
-
-    public static void main(String[] args) throws IOException {
-        ArrayList<Map<String,String>> datosExcel=leerDatosDeHojaDeExcel("C:\\Users\\ADRIANA\\IdeaProjects\\RetoSportLine\\productosSportLine.xlsx","Hoja1");
-        System.out.print(datosExcel.get(0).get("NombreProducto"));
     }
 }
