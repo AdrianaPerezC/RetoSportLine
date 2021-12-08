@@ -64,6 +64,7 @@ En esta clase se codifican los métodos necesarios para cumplir con los pasos in
 - En la primer función llamado **abrirPagina** por medio de GoogleChromeDriver se abre el navegador con la url indicada. 
 - En la segunda función **cargardatos**, en el cual se llama al método de la clase Excel para cargar la lista de productos a buscar y se guardan en la variable **listaProductos**.
 - En la función **buscarYValidarElementosEnSportLine**, permite validar que todos los productos listados en el excel se muestren en pantalla al buscarlos en la página SportLine. **Nota:** Al llamar la función Assert.assertEquals, se pasan los dos valorestipo texto (String) a cadenas sin espacios.
+
 ![](https://user-images.githubusercontent.com/50307550/145252278-e397e7b5-2a78-47aa-a7aa-198559adee08.png)
 
 Elaborado ⌨️ por [Adriana Pérez ](https://github.com/AdrianaPerezC )
